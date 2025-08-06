@@ -1,0 +1,32 @@
+Context:
+- Added Scheme development environment configuration for SquiggleConf 2025 project
+- Integrated tmux session management with project-specific Emacs configurations
+- Supports Guile 3 with full Geiser integration for REPL-driven development
+
+Considerations:
+- Uses direnv-compatible .envrc for environment setup
+- Provides both general conference note-taking and specialized Scheme development configs
+- Tmux sessions are named after project for easy identification
+- Emacs launched with -Q flag for clean environment, loading only project configs
+
+Technical Details:
+- squiggleconf-scheme.el provides complete Scheme IDE features
+- Paredit for structural editing of S-expressions
+- TRAMP support for remote development
+- Org-mode integration for literate programming with Scheme
+- Company mode for intelligent code completion
+- Rainbow delimiters for visual parenthesis matching
+
+Issues Addressed:
+- Provides isolated development environment per project
+- Enables consistent Scheme tooling across different machines
+- Supports both local and remote REPL connections
+
+Timing:
+- Implementation completed: 2025-08-06
+- Tested with Guile 3.x on FreeBSD 14.3
+
+Usage:
+- Run 'make tmux-scheme' to start Scheme development environment
+- Run 'make tmux-emacs' for general conference note-taking environment
+- Source .envrc to get start_project_emacs function in shell
