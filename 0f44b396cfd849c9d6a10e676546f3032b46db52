@@ -27,6 +27,6 @@ Timing:
 - Tested with Guile 3.x on FreeBSD 14.3
 
 Usage:
-- Run 'make tmux-scheme' to start Scheme development environment
-- Run 'make tmux-emacs' for general conference note-taking environment
+- Run "make tmux-scheme" to start Scheme development environment
+- Run "make tmux-emacs" for general conference note-taking environment
 - Source .envrc to get start_project_emacs function in shell
